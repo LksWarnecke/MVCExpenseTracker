@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @*asp-controller="Home" not necessary because the View is in the Home Folder which indicates that we want to comm. w/ Home Controller*@
+    <a asp-controller="Home" asp-action="Expenses" class="btn btn-primary">Overview</a>
+    <a asp-controller="Home" asp-action="CreateEditExpense" class="btn btn-secondary">Create new</a>
+</div>
+
